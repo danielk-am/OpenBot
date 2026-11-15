@@ -7,10 +7,10 @@ All comparisons use the same six visible Bots and one folded hidden Bot, light t
 | Stage | Actual source revision | Capture files |
 | --- | --- | --- |
 | Before PR 1684 | `93e1d5dbc57960682b9b1168ed98ceb66d755379` | baseline-desktop.png, baseline-mobile.png |
-| After PR 1684 / before personal tags | `829b47407c8f10fc575df2eba8082617fda8be48` | controls-desktop.png, controls-mobile.png, controls-search.png |
-| After personal tags | `33841139176ae08839c7e5834b20e8ab7a7a05f3` | tags-desktop.png, tags-mobile.png, tags-editor-mobile.png, tags-filter.png |
+| After PR 1684 / before personal tags | `e1486208987eddd64a5c64250246c47291d8511d` | controls-desktop.png, controls-mobile.png, controls-search.png |
+| After personal tags | `9c8532c0450220e1b6e0255e0d3b768f9d685eb2` | tags-desktop.png, tags-mobile.png, tags-editor-mobile.png, tags-filter.png |
 
-Later changelog-only commits do not change the captured UI.
+Captures match the current product PR heads, including their changelog entries.
 
 The controls-search capture searches for `reports` and sorts Name A–Z. The tags captures add `Finance, Client work` to Finance Analyst through its real dialog. The tags-filter capture selects `Finance`. The capture script asserts the non-matching Bots are absent, verifies save/reload persistence, checks mobile horizontal overflow and rejects JavaScript errors or unrelated load-failure notices.
 
