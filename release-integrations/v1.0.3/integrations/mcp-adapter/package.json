@@ -1,0 +1,1 @@
+{"name":"openbot-mcp-adapter","version":"0.1.0","private":true,"type":"module","scripts":{"test":"node --test tests/*.test.mjs","start":"node src/server.mjs","runner":"node src/runner.mjs"},"dependencies":{"@modelcontextprotocol/sdk":"1.30.0"}}

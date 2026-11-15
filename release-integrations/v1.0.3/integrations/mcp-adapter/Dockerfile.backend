@@ -1,0 +1,6 @@
+ARG OPENBOT_BASE=ghcr.io/copilotkit/openbot@sha256:401e79e56c039df01701c2a21538d96a78ee288b060d18df397e97f6181497f7
+FROM ${OPENBOT_BASE}
+COPY backend/plugins/managed-mcp.ts /app/server/src/plugins/managed-mcp.ts
+COPY backend/plugins/mcp.ts /app/server/src/plugins/mcp.ts
+COPY backend/plugins/plugin-store/servers.ts /app/server/src/plugins/plugin-store/servers.ts
+COPY backend/plugins/route-groups/servers.ts /app/server/src/plugins/route-groups/servers.ts
